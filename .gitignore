@@ -1,0 +1,23 @@
+# Python environments and generated files
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+
+# Secrets: keep the example configuration
+.env
+.env.*
+!.env.example
+
+# Local data and logs
+data/
+*.log
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db
