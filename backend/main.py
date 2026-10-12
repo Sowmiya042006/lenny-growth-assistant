@@ -498,7 +498,7 @@ async def create_essay_artifact(
     )
 
     # Use only the four strongest results for faster generation.
-    passages = passages[:4]
+    passages = passages[:3]
 
     if not passages:
         raise HTTPException(

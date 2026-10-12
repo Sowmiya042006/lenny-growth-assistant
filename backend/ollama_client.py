@@ -51,12 +51,11 @@ async def ask_ollama(message: str) -> str:
     }
 
     timeout = httpx.Timeout(
-        connect=10.0,
-        read=120.0,
-        write=30.0,
-        pool=30.0,
-    )
-
+    connect=10.0,
+    read=600.0,
+    write=60.0,
+    pool=30.0,
+)
     answer_parts = []
 
     try:
